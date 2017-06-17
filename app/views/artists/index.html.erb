@@ -1,0 +1,9 @@
+<div class="container">
+<% @artists.each do |artist| %>
+  <div class="frame col-md-3">
+    <img src='<%=artist.image_url%>' alt="Artist photo" width="250" height="250"><br>
+    <%=artist.name%><br>
+    <%=link_to "Ver más", artist_albums_path(artist)%>
+  </div>
+<%end%>
+</div>
