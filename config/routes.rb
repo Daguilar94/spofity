@@ -7,6 +7,6 @@ Rails.application.routes.draw do
 #    end
 #  end
   get 'artists', to: 'artists#index', as: 'artists'
-  get 'artists/:id', to: 'artists#show', as: 'artist_albums'
+  get 'artists/:id', to: 'artists#show', as: 'artist'
   root 'artists#index'
 end
